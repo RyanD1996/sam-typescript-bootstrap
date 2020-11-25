@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "outDir": "./lib/",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "sourceMap": false,
+    "target": "es6",
+    "esModuleInterop": true,
+    "declaration": true
+  },
+  "include": ["src/", "src/__tests__"],
+  "exclude": ["node_modules", "lib", "**/*.spec.ts", "**/*.spec.tsx", "src/TestFunction/*"]
+}
