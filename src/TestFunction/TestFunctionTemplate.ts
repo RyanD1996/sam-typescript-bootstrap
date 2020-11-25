@@ -1,4 +1,3 @@
-// import { FailableLambda } from 'guardians-handler-wrapper';
 import { APIGatewayProxyResult } from 'aws-lambda';
 
 const handler = async (): Promise<APIGatewayProxyResult> => {
@@ -9,4 +8,3 @@ const handler = async (): Promise<APIGatewayProxyResult> => {
 };
 
 export default handler;
-// export default FailableLambda(handler);
