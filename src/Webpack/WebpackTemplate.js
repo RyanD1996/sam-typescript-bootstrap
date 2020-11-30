@@ -15,8 +15,6 @@ module.exports = {
   },
   externals: {
     'aws-sdk': 'aws-sdk',
-    'datadog-lambda-js': 'datadog-lambda-js',
-    'dd-trace': 'dd-trace',
   },
   optimization: {
     minimizer: [new TerserPlugin({ terserOptions: { mangle: false } })], // mangle false else mysql blow ups with "PROTOCOL_INCORRECT_PACKET_SEQUENCE"
