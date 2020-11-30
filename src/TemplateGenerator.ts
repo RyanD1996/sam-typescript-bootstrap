@@ -35,4 +35,6 @@ export const generateBackendTemplate = (options: any) => {
   fs.writeFileSync('template.yaml', yamlStr, 'utf-8');
 };
 
-export const generateFrontendTemplate = (options: any) => {};
+export const generateFrontendTemplate = (options: any) => {
+  return true;
+};

@@ -8,11 +8,11 @@ import { generateTsConfig } from './TsConfigGenerator';
 import { generateTestLambdaFunction } from './TestFunctionGenerator';
 import { generateTestingSuiteFiles } from './TestSuiteGenerator';
 
-const chalk = require('chalk');
-const clear = require('clear');
-const figlet = require('figlet');
-const { Command } = require('commander');
-const inquirer = require('inquirer');
+import chalk from 'chalk';
+import clear from 'clear';
+import figlet from 'figlet';
+import { Command } from 'commander';
+import inquirer from 'inquirer';
 
 clear();
 
