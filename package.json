@@ -3,13 +3,13 @@
   "author": "Ryan Drohan",
   "version": "0.0.1",
   "description": "An NPM package for easily bootstrapping an AWS SAM project from the command line.",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/app.js",
+  "types": "lib/app.d.ts",
   "bin": {
-    "sam-bootstrap": "lib/index.js"
+    "sam-bootstrap": "lib/app.js"
   },
   "scripts": {
-    "start": "node lib/index.js",
+    "start": "node lib/app.js",
     "create": "npm run build && npm run test",
     "test": "jest --config jestconfig.json",
     "local": "sudo npm i -g && sam-bootstrap",

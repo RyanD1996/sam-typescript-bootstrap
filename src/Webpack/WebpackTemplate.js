@@ -8,7 +8,7 @@ const TerserPlugin = require('terser-webpack-plugin');
  */
 module.exports = {
   entry: {
-    TestFunction: './src/Application/TestFunction/TestFunction.ts',
+    TestFunction: './src/TestFunction/TestFunction.ts',
   },
   resolve: {
     extensions: ['.ts', '.js', '.json'],
