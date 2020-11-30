@@ -45,7 +45,7 @@ const start = async () => {
       type: 'list',
       message: 'frontend or backend?',
       name: 'projectType',
-      choices: ['frontend (WIP`)', 'backend'],
+      choices: ['frontend (WIP)', 'backend'],
       validate: function (answer: any) {
         if (!answer.length) return 'You must select an option';
         return true;
@@ -54,6 +54,11 @@ const start = async () => {
   ]);
 
   let applicationDescription: any;
+
+  if (projectTypeResponse.projectType === 'frontend (WIP)') {
+    console.log('Frontend template is still a work in progres...');
+    return;
+  }
 
   if (projectTypeResponse.projectType === 'backend') {
     applicationDescription = await inquirer.prompt([
