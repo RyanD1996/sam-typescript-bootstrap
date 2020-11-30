@@ -34,3 +34,10 @@ Will return a 200 response:
     {
       "message": "OK"
     }
+
+#### Notes/Todo
+
+- Add ability to generate a simple frontend react-create-app project using AWS SAM
+- Clean up the source code of this project, as it is still a WIP.
+
+Any suggestions on features/improvements are welcome.
