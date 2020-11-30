@@ -11,7 +11,6 @@ import { generateTestingSuiteFiles } from './TestSuiteGenerator';
 const chalk = require('chalk');
 const clear = require('clear');
 const figlet = require('figlet');
-const path = require('path');
 const { Command } = require('commander');
 const inquirer = require('inquirer');
 
@@ -46,7 +45,7 @@ const start = async () => {
       message: 'frontend or backend?',
       name: 'projectType',
       choices: ['frontend (WIP`)', 'backend'],
-      validate: function (answer: any) {
+      validate: (answer: any) => {
         if (!answer.length) return 'You must select an option';
         return true;
       },
@@ -61,7 +60,7 @@ const start = async () => {
         type: 'input',
         message: 'Description for the application?',
         name: 'description',
-        validate: function (answer: any) {
+        validate: (answer: any) => {
           if (!answer.length) return 'You enter a description';
           return true;
         },
@@ -74,7 +73,7 @@ const start = async () => {
         message: 'What endpoint configuration should the API have?',
         name: 'endpointType',
         choices: ['REGIONAL', 'EDGE'],
-        validate: function (answer: any) {
+        validate: (answer: any) => {
           if (!answer.length) return 'You must select an option';
           return true;
         },
@@ -92,7 +91,7 @@ const start = async () => {
       message: 'What testing suite would you like the API to use?',
       name: 'suite',
       choices: ['Mocha (default)', 'Jest'],
-      validate: function (answer: any) {
+      validate: (answer: any) => {
         if (!answer.length) return 'You must select an option';
         return true;
       },
@@ -123,11 +122,3 @@ const start = async () => {
 };
 
 start();
-
-//   .catch((error: any) => {
-//     if (error.isTtyError) {
-//       // Prompt couldn't be rendered in the current environment
-//     } else {
-//       // Something else when wrong
-//     }
-//   });
