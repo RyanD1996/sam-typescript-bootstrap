@@ -11,7 +11,7 @@
   "scripts": {
     "start": "node lib/app.js",
     "create": "npm run build && npm run test",
-    "test": "jest --config jestconfig.json",
+    "test": "",
     "local": "sudo npm i -g && sam-bootstrap",
     "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
     "build": "tsc",
