@@ -20,6 +20,7 @@ const program = new Command();
 
 program.version('0.0.1');
 
+// tslint:disable-next-line: no-console
 console.log(chalk.green(figlet.textSync('sam-bootstrap', { horizontalLayout: 'full' })));
 
 const start = async () => {
@@ -45,7 +46,7 @@ const start = async () => {
       message: 'frontend or backend?',
       name: 'projectType',
       choices: ['frontend (WIP)', 'backend'],
-      validate: function (answer: any) {
+      validate: (answer: any) => {
         if (!answer.length) return 'You must select an option';
         return true;
       },
@@ -55,6 +56,7 @@ const start = async () => {
   let applicationDescription: any;
 
   if (projectTypeResponse.projectType === 'frontend (WIP)') {
+    // tslint:disable-next-line: no-console
     console.log('Frontend template is still a work in progres...');
     return;
   }
