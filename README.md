@@ -3,8 +3,7 @@
 This is a CLI npm package for creating a simple AWS Serverless project using the [SAM](https://aws.amazon.com/serverless/sam/). The package will ask a series of questions and generate the required files and configuration that makes up a project with the following features:
 
 - Typescript to JS transpiling, using webpack to create a `dist` folder containing the JS source code for the project to be deployed.
-- Unit tests
-- Automation tests (using [cucumber](https://cucumber.io/docs/cucumber/))
+- Unit testing library (Mocha/Chai/Sinon OR Jest) and sample unit test file setup.
 - Cloudformation template provisioning a simple lambda
 - Simple API [Swagger](https://swagger.io/) documentation for the simple lambda that is created
 
@@ -39,5 +38,7 @@ Will return a 200 response:
 
 - Add ability to generate a simple frontend react-create-app project using AWS SAM
 - Clean up the source code of this project, as it is still a WIP.
+- Add custom domain for API.
+- Automation tests (using [cucumber](https://cucumber.io/docs/cucumber/))
 
 Any suggestions on features/improvements are welcome.

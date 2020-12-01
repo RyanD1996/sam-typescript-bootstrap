@@ -1,7 +1,7 @@
 {
   "name": "sam-typescript-bootstrap",
   "author": "Ryan Drohan",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "An NPM package for easily bootstrapping an AWS SAM project from the command line.",
   "main": "lib/app.js",
   "types": "lib/app.d.ts",
@@ -57,12 +57,14 @@
     "@types/figlet": "^1.2.1",
     "@types/inquirer": "^7.3.1",
     "@types/js-yaml": "^3.12.5",
+    "@types/lodash.merge": "^4.6.6",
     "chalk": "^4.1.0",
     "clear": "^0.1.0",
     "commander": "^6.2.0",
     "figlet": "^1.5.0",
     "inquirer": "^7.3.3",
     "js-yaml": "^3.14.0",
+    "lodash.merge": "^4.6.2",
     "path": "^0.12.7"
   }
 }
