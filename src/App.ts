@@ -74,21 +74,21 @@ const start = async () => {
       },
     ]);
 
-    const endpointConfigurationResponse = await inquirer.prompt([
-      {
-        type: 'list',
-        message: 'What endpoint configuration should the API have?',
-        name: 'endpointType',
-        choices: ['REGIONAL', 'EDGE'],
-        validate: (answer: any) => {
-          if (!answer.length) return 'You must select an option';
-          return true;
-        },
-      },
-    ]);
+    // const endpointConfigurationResponse = await inquirer.prompt([
+    //   {
+    //     type: 'list',
+    //     message: 'What endpoint configuration should the API have?',
+    //     name: 'endpointType',
+    //     choices: ['REGIONAL', 'EDGE'],
+    //     validate: (answer: any) => {
+    //       if (!answer.length) return 'You must select an option';
+    //       return true;
+    //     },
+    //   },
+    // ]);
     generateBackendTemplate({
       description: applicationDescription.description,
-      endpointType: endpointConfigurationResponse.endpointType,
+      endpointType: 'REGIONAL',
     });
   }
 
