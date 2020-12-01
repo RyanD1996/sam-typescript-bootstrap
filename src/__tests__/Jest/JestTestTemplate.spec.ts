@@ -1,4 +1,3 @@
-import expect from 'jest';
 import handler from '../TestFunction/TestFunction';
 
 test('handler returns 200', async () => {
