@@ -1,6 +1,6 @@
 ### Sam-typescript-bootstrap
 
-![Demo](https://user-images.githubusercontent.com/44706704/100780085-34c6fd80-3401-11eb-9fae-04ef89da43d1.gif)
+![Demo](https://github.com/RyanD1996/sam-typescript-bootstrap/blob/main/demo.gif)
 
 This is a CLI npm package for creating a simple AWS Serverless project using the [SAM](https://aws.amazon.com/serverless/sam/). The package will ask a series of questions and generate the required files and configuration that makes up a project with the following features:
 
